@@ -20,7 +20,7 @@ class NetworkClient {
     }
 
     suspend fun getShirts(): ShirtResponse {
-        val response = client.get("https://run.mocky.io/v3/ef04c8ac-6e91-4059-9c62-b2de95b55c27")
+        val response = client.get("https://run.mocky.io/v3/4bc10f29-c232-4d6e-955d-adda408bb0a8")
         return response.body()
     }
 }

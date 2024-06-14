@@ -26,13 +26,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import view.home.composables.BottomView
 import view.home.composables.ShirtStoreToolBar
-import data.network.NetworkClient
-import data.repository.ItemRepository
 import di.Injector
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import view.home.HomeScreen
-import view.home.HomeViewModel
+
 
 @OptIn(ExperimentalResourceApi::class, ExperimentalFoundationApi::class)
 @Composable
@@ -49,12 +47,7 @@ fun App() {
             Scaffold(
                 scaffoldState = scaffoldState,
                 content = { padding ->
-//                    Content(
-//                        padding,
-//                        topBarState,
-//                        bottomBarState,
-//                        fabState
-//                    )
+
                     HomeScreen(homeViewModel)
                 },
                 topBar = {
